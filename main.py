@@ -8,10 +8,10 @@ print("\n")
 
 question_bank = []
 for question in question_data:
-    question_text = question["text"]    # variable to keep "text" from quesiton_data dictionary
-    question_answer = question["answer"]     # variable to keep "answer" from quesiton_data dictionary
-    new_question = Question(q_text=question_text, q_answer=question_answer)      # object to pass text & answer from question_data
-    question_bank.append(new_question)       # questions loop through
+    question_text = question["text"]    
+    question_answer = question["answer"]    
+    new_question = Question(q_text=question_text, q_answer=question_answer)      
+    question_bank.append(new_question)       
 
 quiz = QuizBrain(question_bank)
 
